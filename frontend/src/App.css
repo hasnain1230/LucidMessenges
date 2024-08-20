@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a0a0a;
+    color: #ffffff;
+}
+
+.App {
+    text-align: center;
+}
+
+.content-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.App-header {
+    background: linear-gradient(135deg, #1c1c1c 0%, #0a0a0a 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(28, 28, 28, 0.8);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #7c4dff;
+}
+
+
+.logo-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.logo-link:hover .logo {
+    opacity: 0.8;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: flex;
+}
+
+.nav-links a,
+.nav-links button {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #7c4dff;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-links a:hover,
+.nav-links button:hover {
+    background-color: #5e35b1;
+    box-shadow: 0 0 15px rgba(124, 77, 255, 0.5);
+}
+
+.App-header {
+    background: linear-gradient(135deg, #1c1c1c 0%, #0a0a0a 100%);
+    min-height: 100vh;
+    /* This makes it take up at least the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    /* Adjusted padding */
+    position: relative;
+    overflow: hidden;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.App-header h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.App-header p {
+    font-size: 1.4em;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.welcome-message {
+    font-size: 1em;
+    color: #ffffff;
+    background-color: rgba(124, 77, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.welcome-message:hover {
+    background-color: rgba(124, 77, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+    .user-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .welcome-message {
+        font-size: 0.9em;
+    }
+}
+
+.cta-button {
+    background-color: #7c4dff;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    font-weight: 400;
+}
+
+
+.cta-button:hover {
+    background-color: #5e35b1;
+    box-shadow: 0 0 20px rgba(124, 77, 255, 0.7);
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.button-container .cta-button {
+    min-width: 120px;
+}
+
+.button-container motion.div {
+    flex: 1;
+    max-width: 200px;
+}
+
+.button-container .cta-button {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+footer {
+    margin-top: auto;
+    background-color: #1c1c1c;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .nav-links {
+        margin-top: 20px;
+    }
+
+    .App-header {
+        padding: 120px 20px 80px;
+    }
+
+    .App-header h1 {
+        font-size: 3em;
+    }
+
+    .App-header p {
+        font-size: 1.2em;
+    }
+
+    .hero-image {
+        left: 0;
+        opacity: 0.1;
+    }
+}
