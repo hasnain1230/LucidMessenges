@@ -23,7 +23,7 @@ Lucid Messages is a secure messaging platform I'm developing to enhance user pri
 - Deployment: Docker, AWS EC2
 - Load Balancing: Nginx
 - Authentication: JWT
-- Encryption: End-to-end encryption (in progress)
+- Encryption: End-to-end encryption
 
 ## Setup
 
