@@ -45,7 +45,7 @@ As this project is still in its early stages and primarily a personal endeavor, 
 
 ## License
 
-This project is licensed under the GNU AFFERO GENERAL PUBLIC LICENSE Version 3 - see the [LICENSE.md](LICENSE) file for details.
+This project is licensed under the GNU AFFERO GENERAL PUBLIC LICENSE Version 3 - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
