@@ -1,6 +1,7 @@
 from datetime import timedelta
 
 from flask import request, jsonify, current_app
+from email_validator import validate_email, EmailNotValidError
 from sqlalchemy.exc import IntegrityError
 from werkzeug.exceptions import BadRequest
 
@@ -35,13 +36,27 @@ def register():
     if password != confirmed_password:
         return jsonify({"error": "Passwords do not match"}), 400
 
+    if not username or not email or not password:
+        return jsonify({"error": "All fields are required"}), 400
+
+    if len(username) < 3 or len(username) > 32:
+        return jsonify({"error": "Username must be between 3 and 32 characters"}), 400
+
+    if len(password) < 8:
+        return jsonify({"error": "Password must be at least 8 characters long"}), 400
+
+    try:
+        validate_email(email)
+    except EmailNotValidError:
+        return jsonify({"error": "Invalid email address"}), 400
+
     user = User(username=username, email=email, password=password)
 
     try:
         db.session.add(user)
         db.session.commit()
 
-        send_verification_email(user)
+        send_user_email(user)
 
         return jsonify(
             {"message": "Account created successfully. Please check your email for the verification code"}), 201
@@ -57,7 +72,7 @@ def register():
 
         if not user.is_verified:
             user.generate_verification_code()  # Regenerate the verification code
-            send_verification_email(user)
+            send_user_email(user)
             return jsonify({"message": "Verification code resent"}), 200
 
         current_app.logger.error(f"Failed to create user, user already exists: {e}")
