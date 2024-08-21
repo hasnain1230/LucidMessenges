@@ -5,12 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8f0ea82-ef21-4429-89a5-1f12218691f8" name="Changes" comment="">
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/../auth_service/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../auth_service/app/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../auth_service/app/auth/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/../auth_service/app/auth/routes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../auth_service/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../auth_service/app/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../frontend/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../frontend/node_modules/.cache/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../frontend/node_modules/.cache/default-development/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../../frontend/node_modules/.cache/default-development/0.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../frontend/node_modules/.cache/default-development/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../../frontend/node_modules/.cache/default-development/index.pack" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
