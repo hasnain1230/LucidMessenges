@@ -143,6 +143,7 @@ function SignUp() {
             onSubmit={handleVerificationSubmit}
           />
         )}
+
       </motion.div>
     </div>
   );
