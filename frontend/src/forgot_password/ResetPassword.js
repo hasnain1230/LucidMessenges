@@ -51,6 +51,7 @@ function ResetPassword() {
       }
 
       setSuccess('Your password has been successfully changed.');
+      navigate('/login')
     } catch (error) {
       console.error('Password reset error:', error);
       setError('An unexpected error occurred. Please try again.');
