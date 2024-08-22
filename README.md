@@ -6,6 +6,10 @@ Lucid Messages is a secure messaging platform I'm developing to enhance user pri
 
 **Note: This project is currently a work in progress. Only authentication services (login, sign-up, forgot-password) have been implemented so far. I have every intention of completing the full messaging functionality in the future.**
 
+You can check out the progress I have made so far at https://lucidmessages.com
+
+While the project is not done yet, I've made quite a bit of progress and you can check out my most recent stable build there!
+
 ## Current Features
 
 - User authentication (login, sign-up)
