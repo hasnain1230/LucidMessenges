@@ -1,4 +1,4 @@
-const AUTH_URL = 'http://localhost:5000/auth'
+const AUTH_URL = 'https://lucidmessages.com/auth'
 
 export const AUTH_ENDPOINTS = {
     REGISTER: `${AUTH_URL}/register`,

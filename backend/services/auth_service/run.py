@@ -4,5 +4,7 @@ app = create_app()
 
 if __name__ == '__main__':
     init_db(app)
-
     app.run(debug=True)
+else:
+    init_db(app)
+    print("Prod: DB Initialized")

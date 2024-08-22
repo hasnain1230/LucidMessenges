@@ -1,0 +1,21 @@
+version: '3'
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "443:443"
+    volumes:
+      - /etc/letsencrypt:/etc/letsencrypt:ro
+    depends_on:
+      - auth_service
+    networks:
+      - lucid_messages_network
+  auth_service:
+    build: ./backend/services/auth_service
+    env_file:
+      - ./backend/services/auth_service/.env
+    networks:
+      - lucid_messages_network
+networks:
+  lucid_messages_network:
+    name: lucid_messages_network

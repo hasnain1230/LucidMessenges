@@ -4,3 +4,4 @@ backend/services/auth_service/app/__pycache__/*
 backend/services/auth_service/app/auth/__pycache__/*
 backend/services/auth_service/app/util/__pycache__/*
 backend/services/auth/*
+backend/services/auth_service/__pycache__/*
